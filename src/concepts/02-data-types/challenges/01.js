@@ -1,93 +1,55 @@
 export const primitiveDataTypes = () => {
-  // declare a variable with a string type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  // declare a variable with a number type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  // declare a variable with a boolean type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  // declare a variable with a big int type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  const myCar = "Tesla";
-  console.log(myCar);
-  console.log(typeof myCar);
+  const vehicle = "Tesla";
+  console.log(vehicle);
+  console.log(typeof vehicle);
 
-  const myNumer = 80000;
-  console.log(myNumer);
-  console.log(typeof myNumer);
+  const price = 80000;
+  console.log(price);
+  console.log(typeof price);
 
-  const myBoolean = true;
-  console.log(myBoolean);
-  console.log(typeof myBoolean);
+  const isNew = true;
+  console.log(isNew);
+  console.log(typeof isNew);
 
-  const myInter = 12345678900000000n;
-  console.log(myInter);
-  console.log(typeof myInter);
+  const totalRevenue = 12345678900000000n;
+  console.log(totalRevenue);
+  console.log(typeof totalRevenue);
 };
 
 export const objectDataTypes = () => {
-  // declare a variable with an object type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  // declare a variable with a array type
-  // display the value in the console
-  // display the typeof for the variable in the console
-  // declare a variable with a function type
-  // display the typeof for the variable in the console
-  // declare a variable with a Date type
-  // display the instanceof for the variable in the console
-  // declare a variable with a RegExp type
-  // display the instanceof for the variable in the console
-
-  const myPc = {
+  const laptop = {
     brand: "Apple",
     device: "MacBook Pro",
     year: 2024,
   };
+  console.log(laptop);
+  console.log(typeof laptop);
 
-  console.log(myPc);
-  console.log(typeof myPc);
+  const users = ["Alice Smith", "Bob Smith", "Carol Smith"];
+  console.log(users);
+  console.log(typeof users);
 
-  const myArray = ["Alice Smith", "Bob Smith", "Carol Smith"];
-  console.log(myArray);
-  console.log(typeof myArray);
+  const add = function () {};
+  console.log(typeof add);
 
-  const myFunction = function () {};
-  console.log(typeof myFunction);
+  const now = new Date();
+  console.log(now instanceof Date);
 
-  const myDate = new Date();
-  console.log(myDate instanceof Date);
-
-  const regExp = new RegExp();
-  console.log(regExp instanceof RegExp);
+  const pattern = new RegExp();
+  console.log(pattern instanceof RegExp);
 };
 
 export const mapDataType = () => {
-  // declare a variable with a Map type
-  // set the firstName as a key
-  // set the lastName as a key
-  // display the value of firstName in the console
-  // display the value of lastName in the console
-
-  const myMap = new Map();
-  myMap.set("firstName", "Bob");
-  myMap.set("lastName", "Smith");
-
-  console.log(myMap.get("firstName"));
-  console.log(myMap.get("lastName"));
+  const user = new Map();
+  user.set("firstName", "Bob");
+  user.set("lastName", "Smith");
+  console.log(user.get("firstName"));
+  console.log(user.get("lastName"));
 };
 
 export const setDataType = () => {
-  // declare a variable with a Set type
-  // add one item to the set
-  // add one item to the set
-  // display the size of the set in the console
-
-  const mySet = new Set();
-  mySet.add(1);
-  mySet.add(2);
-  console.log(mySet.size);
+  const numbers = new Set();
+  numbers.add(1);
+  numbers.add(2);
+  console.log(numbers.size);
 };
