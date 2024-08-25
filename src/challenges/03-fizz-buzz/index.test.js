@@ -7,7 +7,8 @@ describe("fizzBuzz", () => {
     expect(actual).toEqual(expected);
   });
   it("should return expected result for 16", () => {
-    const expected = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16;
+    const expected =
+      "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16";
     const actual = fizzBuzz(16);
     expect(actual).toEqual(expected);
   });
@@ -22,22 +23,26 @@ describe("fizzBuzz", () => {
     expect(actual).toEqual(expected);
   });
   it("should return expected result for -6", () => {
-    const expected = "Please enter a valid ending number, should be a positive integer.";
+    const expected =
+      "Please enter a valid ending number, should be a positive integer.";
     const actual = fizzBuzz(-6);
     expect(actual).toEqual(expected);
   });
   it("should return expected result for 6.5", () => {
-    const expected = "Please enter a valid ending number, should be a positive integer.";
+    const expected =
+      "Please enter a valid ending number, should be a positive integer.";
     const actual = fizzBuzz(6.5);
     expect(actual).toEqual(expected);
   });
   it("should return expected result for -6.5", () => {
-    const expected = "Please enter a valid ending number, should be a positive integer.";
+    const expected =
+      "Please enter a valid ending number, should be a positive integer.";
     const actual = fizzBuzz(-6.5);
     expect(actual).toEqual(expected);
   });
   it("should return expected result for undefined", () => {
-    const expected = "Please enter a valid ending number, should be a positive integer.";
+    const expected =
+      "Please enter a valid ending number, should be a positive integer.";
     const actual = fizzBuzz();
     expect(actual).toEqual(expected);
   });
