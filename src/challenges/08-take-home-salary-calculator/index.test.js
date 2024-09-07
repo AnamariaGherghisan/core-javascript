@@ -2,13 +2,26 @@ import { takeHomeSalary } from ".";
 
 describe("takeHomeSalary", () => {
   describe("for tax year 2021/2022", () => {
-    it("should return expected result for 30000", () => {});
+    it("should return expected result for 30000", () => {
+      const expected = 
+    });
 
     it("should return expected result for 50000", () => {});
 
     it("should return expected result for 150000", () => {});
 
-    it("should return expected result for 10000", () => {});
+    it("should return expected result for 10000", () => {
+      const expected = {
+        annualIncome: 10000,
+        taxYear: "2021/2022",
+        taxableIncome: 0,
+        taxPercentage: 0,
+        taxAmount: 0,
+        takeHomeSalary: 10000,
+      };
+      const actual = takeHomeSalary(10000, "2021/2022");
+      expect(actual).toEqual(expected);
+    });
   });
 
   describe("for tax year 2022/2023", () => {
@@ -18,7 +31,18 @@ describe("takeHomeSalary", () => {
 
     it("should return expected result for 150000", () => {});
 
-    it("should return expected result for 10000", () => {});
+    it("should return expected result for 10000", () => {
+      const expected = {
+        annualIncome: 10000,
+        taxYear: "2021/2022",
+        taxableIncome: 0,
+        taxPercentage: 0,
+        taxAmount: 0,
+        takeHomeSalary: 10000,
+      };
+      const actual = takeHomeSalary(10000, "2021/2022");
+      expect(actual).toEqual(expected);
+    });
   });
 
   describe("error handling", () => {
